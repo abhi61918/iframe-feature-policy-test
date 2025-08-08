@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Iframe Test</title>
+</head>
+<body>
+  <h3>Child Iframe</h3>
+  <script>
+    const isAllowed = document.featurePolicy?.allowsFeature("private-state-token-redemption");
+
+    document.body.innerHTML += `<p>private-state-token-redemption allowed: <strong>${isAllowed}</strong></p>`;
+    console.log("private-state-token-redemption allowed:", isAllowed);
+  </script>
+</body>
+</html>
